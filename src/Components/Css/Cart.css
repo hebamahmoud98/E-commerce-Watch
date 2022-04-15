@@ -1,0 +1,125 @@
+.cart {
+  position: relative;
+  border: 1px solid #555;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0 !important;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.cart img {
+  max-width: 300px;
+  min-height: 290px;
+  height: 300px;
+  width: 100%;
+}
+.amount {
+  width: 50%;
+  margin-top: 2rem;
+}
+.amount span {
+  color: rgb(255, 238, 0);
+  padding: 0 25px;
+  text-align: center;
+}
+.amount .count {
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgb(39, 39, 39);
+  outline: none;
+  background: #333;
+  cursor: pointer;
+  font-size: 2rem;
+  color: #fff;
+}
+.remove {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  cursor: pointer;
+  color: rgb(255, 238, 0);
+  font-size: 24px;
+  font-weight: 500;
+}
+.total {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.total a {
+  text-decoration: none;
+  background-color: #333;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 10px 25px;
+}
+.total h3 {
+  color: #000 !important;
+  background-color: rgb(255, 238, 0);
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 10px 25px;
+}
+.row h2 {
+  color: #555;
+}
+.row p {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.cart .box {
+  width: 100%;
+}
+.spanCount {
+  display: flex;
+  width: 50%;
+  margin-top: 2rem;
+}
+
+.spanCount span {
+  color: #000 !important ;
+  font-size: 2rem;
+  width: 50%;
+  padding: 3px 30px;
+  text-align: center;
+  background-color: rgb(255, 238, 0);
+}
+.row h2:hover {
+  color: rgb(255, 238, 0) !important;
+}
+.box p {
+  color: #fff;
+}
+@media (max-width: 720px) {
+  section .cart {
+    width: 95%;
+  }
+  .spanCount span {
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 3px 25px;
+  }
+  .amount {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .priceAmount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .total h3 {
+    padding: 10px 15px;
+  }
+  .total a {
+    padding: 15px 15px;
+  }
+}
